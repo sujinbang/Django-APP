@@ -7,9 +7,16 @@ from django.shortcuts import render
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
-def test(request) :
+def home(request) :
     return render(
         request,
         "home.html",
+        {}
+    )
+
+def travel(request) :
+    return render(
+        request,
+        "travel.html",
         {}
     )
