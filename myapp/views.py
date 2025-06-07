@@ -20,3 +20,10 @@ def travel(request) :
         "travel.html",
         {}
     )
+
+def books(request) :
+    return render(
+        request,
+        "books.html",
+        {}
+    )

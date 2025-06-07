@@ -1,109 +1,94 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
-  <link as="style"
-    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
-    onload="this.rel='stylesheet'" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-  <title>Stitch Design</title>
-  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
 
-<body class="bg-[#f9f8fc]" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
-  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-    <header class="sticky top-0 z-10 bg-[#f9f8fc]/80 backdrop-blur-sm">
-      <div class="flex items-center p-5 pb-4 justify-between">
-        <h1 class="text-[#100e1b] text-2xl font-bold leading-tight tracking-tight flex-1 text-center">My Healing Space
-        </h1>
-        <button class="flex items-center justify-center rounded-full h-12 w-12 hover:bg-slate-200 text-[#100e1b]">
-          <span class="material-icons-outlined text-2xl">add</span>
-        </button>
-      </div>
-      <nav class="border-b border-[#e0dde9] px-4">
-        <ul class="flex justify-around">
-          <li class="flex-1">
-            <a class="flex flex-col items-center justify-center border-b-2 border-[#6247ea] text-[#100e1b] pb-4 pt-3"
-              href="#">
-              <span class="text-base font-semibold leading-normal tracking-tight">Youtube</span>
-            </a>
-          </li>
-          <li class="flex-1">
-            <a class="flex flex-col items-center justify-center border-b-2 border-transparent text-[#5a4e97] hover:text-[#6247ea] hover:border-[#6247ea]/50 pb-4 pt-3"
-              href="#">
-              <span class="text-base font-semibold leading-normal tracking-tight">Books</span>
-            </a>
-          </li>
-          <li class="flex-1">
-            <a class="flex flex-col items-center justify-center border-b-2 border-transparent text-[#5a4e97] hover:text-[#6247ea] hover:border-[#6247ea]/50 pb-4 pt-3"
-              href="#">
-              <span class="text-base font-semibold leading-normal tracking-tight">Memories</span>
-            </a>
-          </li>
-          <li class="flex-1">
-            <a class="flex flex-col items-center justify-center border-b-2 border-transparent text-[#5a4e97] hover:text-[#6247ea] hover:border-[#6247ea]/50 pb-4 pt-3"
-              href="/myapp/travel">
-              <span class="text-base font-semibold leading-normal tracking-tight">Travel</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="flex-grow">
-      <section class="p-5" id="youtube-content">
-        <div class="grid grid-cols-2 gap-x-5 gap-y-8">
-          <article class="flex flex-col gap-2">
-            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGg1oNwEX_sDaWkZe8vUxU_cq4OTX4r5AD7d1Ak0TSKenYuNeDrMWB7Y_Tc6nX1bfJWl4BGXTN5U7bPZKEfuCh5GmpG3WJP7We3lZwKT1XIs4FyMRwlL3hzpbUe8dfa7KBfYd0KIkxIXLF35S2VElhx9d0C-C4zvFAWpv7ag0kILeoXzdKb5sGCUp6efgG7d72jPsIMSuKX55DRraEszjPy5uoBf-q4bS7o5OqSDIfcM_EWPmhv9xuEgoCpnuD5GLasCPYUrcVPy4s");'>
-            </div>
-            <h3 class="text-[#100e1b] text-lg font-medium leading-snug">Mindfulness Meditation</h3>
-          </article>
-          <article class="flex flex-col gap-2">
-            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGJ0UerQ8Cj85oTV2FObNFum2g0b65rmffnfNPRgaKrK_OaEWpblFXzSolhI_gP8qwFe4Evh0VRo9MLQVih2LKGC1TUFjUsoGOg6e4MVjpYmorSWsKHILDzx-xbwcPBXbUOVF5hqmq87UqDfpTmZI7UqbebsztaG-zZpbzBtT_dK-_F9ds7ImR1BPmGUlKPprkCmSrFX0Xg9_psk9r4oXXZ-099wTvT499_ENLc9ERg2gJbUEKYDSxeio5fi8t0JDTJXgVXKBQXhDa");'>
-            </div>
-            <h3 class="text-[#100e1b] text-lg font-medium leading-snug">Yoga for Stress Relief</h3>
-          </article>
-          <article class="flex flex-col gap-2">
-            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0nG42c1woGWmd5hdN7ySCZE-NrAe9lLMKdTiqMzwwwdu3Fs3uj0H8KRpqSF4rVaZVTHnxIi1-yLmMiTZGM7nCeFsMs5Jmj_xEzEdMtMO2viLUVNoGdhtk_meqEJ5-GpVrgZBb7HkV135pqFys7yjWOyShM2NIptSUOWdFFeJF6mzTvFOeOB_O1b5ZZtcPmzpGo8Ytb9WUsn3DdVl8hXVjK5d84GnQfy_aX2KAMU_rvSm9OTyf_4GczAT-MUyJlpnxSthGqN7t-TFg");'>
-            </div>
-            <h3 class="text-[#100e1b] text-lg font-medium leading-snug">Nature Sounds for Relaxation</h3>
-          </article>
+<body class="bg-[#F9F8FC]">
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden"
+        style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+        <div class="flex-grow">
+            <header class="sticky top-0 z-10 bg-[#F9F8FC]/80 backdrop-blur-sm">
+                <div class="flex items-center p-5 pb-4">
+                    <h2 class="text-[#100E1B] text-2xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+                        Home
+                    </h2>
+                </div>
+            </header>
+            <section class="p-5" id="youtube-content">
+                <div class="grid grid-cols-2 gap-x-5 gap-y-8">
+                    <article class="flex flex-col gap-2 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                        <a href="/myapp/travel">
+                            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxK2E_oNA405uc_aNfuqlWjQNOes6k_NeN3_qwCOxH-QtRVn2npgVmns2WkzknJAavIos04NS6GurGspQAS2lIuNvkxYo2T3GzmQAjHay5M8hMsuoGPxV15vVh1hAstNzgQ2LkkDSCB0Funj5J5HVECImI-WZM7KrY8A6IHZwxW5F6SxQOWQJKoEzZWStzE6j4z7QeaOWalEzli3baJ2XNbqO5Pr9UDL-Uj0Y-pfS5P5kY1FYL1AOVmVTqsK2Mipfled-5-mKSkLi_");'>
+                            </div>
+                            <h3 class="text-[#100e1b] text-lg font-medium leading-snug text-center">Travel</h3>
+                        </a>
+                    </article>
+                    <article class="flex flex-col gap-2 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                        <a href="/myapp/books">
+                            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHXoU-F3R-7ygOMSbat7lNKrgnrLdzd1Kdz5hSz3BPCBttC3WAvdBrtRZ40A7Eji-PGOn3SfxS9qCOCiVRT79a3_RaIm_xBNqK-NvStqQClVlXBnOz1A88dH34PXk7DQ9rAv6bx2gncDAvPMpIOyuHe6Owr0E0NyzK1QrucYafrvht6yWkOTT7pCjitfU7B2qM0lbNkxsOdMSdIqRdaO7lDRC87nkQo7N9NF7Iv1SgVVoHBNPjKUXpwCVKcjkjN_Aa0_HS406xstoF");'>
+                            </div>
+                            <h3 class="text-[#100e1b] text-lg font-medium leading-snug text-center">Books</h3>
+                        </a>
+                    </article>
+                    <article class="flex flex-col gap-2 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                        <a href="#">
+                            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUSzjvmJTmogxrPvPc4FchC5qAkK4uh4ofcKqY3geFI2SBYOQPS9_P0M7dKSq_XoMRTOKnks4RrMeq7BBkBthmkG2x_3GVPedH92xLmBbIxwp9F5Vydm3RgmIjSLVa6o1zAeSeokoMvnAZPNRYCcxqhh7dBhgP6Z-HWTkZwEmgeHYME4pz54mwjIG6IlefYxS6gx7td819EjQVEwG5KfP__jWZYUNfGuzLCn8WhHflt89iRFIccpX_3IFKzJPXOSKuzJaPZOrVV540");'>
+                            </div>
+                            <h3 class="text-[#100e1b] text-lg font-medium leading-snug text-center">Mindfulness</h3>
+                        </a>
+                    </article>
+                    <article class="flex flex-col gap-2 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                        <a href="#">
+                            <div class="w-full aspect-[16/10] bg-center bg-no-repeat bg-cover rounded-lg shadow-sm"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3O7iQ_l87vfeMNhuggc4ofvsDSOQLCBVMpnD0MNmraUtLi-LaUFUCrdAWK8qHTECoaaRn-ena2Lnh6MeMCMPiQ22KJ9pE7Cmnp7ysvUw65NKZG58xJPspxCgg_XQwuShvqzTWlVMre-wH0moqIKzAiSbIqYfnvroxJNqzKbaqSSTqjvqVz8UXYB9n0r4VzRSrUv8nJDXNd1zaQ79Xf6SES0SZe8EoTbw7FSIgHM_JBAp83X9yVJvYxA09XrKnRxFIrsn8k1_iX4Rz");'>
+                            </div>
+                            <h3 class="text-[#100e1b] text-lg font-medium leading-snug text-center">Marriage</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </div>
-      </section>
-    </main>
+
+        <div class="h-6 bg-[#F9F8FC]"></div>
+    </div>
+
     <footer class="sticky bottom-0 border-t border-[#e9e7f3] bg-[#f9f8fc]/95 backdrop-blur-sm pb-safe">
-      <nav class="flex justify-around items-center px-4 pt-3 pb-2">
-        <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#6247ea]" href="#">
-          <span class="material-icons-outlined text-2xl">home</span>
-          <p class="text-base font-medium leading-normal tracking-tight">Home</p>
-        </a>
-        <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#5a4e97] hover:text-[#6247ea]"
-          href="#">
-          <span class="material-icons-outlined text-2xl">search</span>
-          <p class="text-base font-medium leading-normal tracking-tight">Explore</p>
-        </a>
-        <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#5a4e97] hover:text-[#6247ea]"
-          href="#">
-          <span class="material-icons-outlined text-2xl">person_outline</span>
-          <p class="text-base font-medium leading-normal tracking-tight">Profile</p>
-        </a>
-      </nav>
+        <nav class="flex justify-around items-center px-4 pt-3 pb-2">
+            <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#6247ea]" href="/myapp/home">
+                <span class="material-icons-outlined text-2xl">home</span>
+                <p class="text-base font-medium leading-normal tracking-tight">Home</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#5a4e97] hover:text-[#6247ea]"
+                href="#">
+                <span class="material-icons-outlined text-2xl">search</span>
+                <p class="text-base font-medium leading-normal tracking-tight">Explore</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#5a4e97] hover:text-[#6247ea]"
+                href="#">
+                <span class="material-icons-outlined text-2xl">person_outline</span>
+                <p class="text-base font-medium leading-normal tracking-tight">Profile</p>
+            </a>
+        </nav>
     </footer>
-  </div>
-  <style>
-    .pb-safe {
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-  </style>
+
 </body>
 
 </html>
